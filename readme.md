@@ -10,15 +10,15 @@ A ideia é melhorar e o CRUD escrito nos 4 arquivos de teste abaixo.
 Será a validada a forma de escrita de código.
 Escreva códigos que humanos consigam entender.
 
-Fique a vontade para fazer modificaçoes nos serviços, comentários em código, estrutura, mas seja objetivo.
+Fique a vontade para fazer modificações nos serviços, comentários em código, estrutura, mas seja objetivo.
 
 ## teste1.js
 
 GET em /user 
 
-Possuimos neste arquivo um serviço que faz uma busca no banco fake e retorna um registro.
-Este código funciona, mas é possivel melhorar.
-Veja o que pode deixar ele melhor escrito e mais performatico.
+Possuímos neste arquivo um serviço que faz uma busca no banco fake e retorna um registro.
+Este código funciona, mas é possível melhorar.
+Veja o que pode deixar ele melhor escrito e mais performático.
 
 ## teste2.js
 
@@ -27,7 +27,7 @@ POST em /users, descubra a intenção dele e o corrija.
 ## teste3.js
 
 Este procura um usuário e o deleta da base.
-Retorne sucesso para o client caso realmente tenha sido excluido e deixe o código mais performatico.
+Retorne sucesso para o client caso realmente tenha sido excluído e deixe o código mais performático.
 
 ## teste4.js
 
