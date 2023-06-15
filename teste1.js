@@ -14,10 +14,12 @@ const getUser = (req, res, next) => {
 
       // * Adicionar um return no IF dentro de um loop, ajuda a melhorar o tempo de execução da aplicação no melhor caso
       // Entende-se por melhor caso quando o nome procurado está na primeira posição
-      // *Sendo assim, no melhor caso, o código irá parar de ser executado assim que encontrar o dado
+      // * Sendo assim, no melhor caso, o código irá parar de ser executado assim que encontrar o dado
       return res.status(200).send(data[i]);
     }
   }
+
+  return res.status(406).send("Usuário não encontrado");
 };
 
 const getUsers = (req, res, next) => {
