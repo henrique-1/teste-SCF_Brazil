@@ -1,7 +1,7 @@
 var data = require("./fakeData");
 
 const getUser = (req, res, next) => {
-  var { name } = req.query;
+  const { name } = req.query;
 
   for (let i = 0; i < data.length; i++) {
     if (data[i].name == name) {
@@ -19,7 +19,7 @@ const getUser = (req, res, next) => {
     }
   }
 
-  return res.status(406).send("Usuário não encontrado");
+  return res.status(400).send("Usuário não encontrado");
 };
 
 const getUsers = (req, res, next) => {

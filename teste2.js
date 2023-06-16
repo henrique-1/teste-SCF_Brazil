@@ -8,6 +8,10 @@ module.exports = function (req, res) {
   // * Utilizo constante pois por se tratar de uma requisição (POST), não há necessidade de modificar o valor. Porém, quando há necessidade de modificar o valor enviado, o ideal é criar uma segunda variável
   const { name, job, canUpdate, canDelete } = req.body;
 
+  if (name == undefined && job == undefined) {
+    return res.status(400).send("Requisição incompleta");
+  }
+
   let ids = [];
 
   for (let i = 0; i < data.length; i++) {

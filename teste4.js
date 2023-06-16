@@ -24,5 +24,5 @@ module.exports = function (req, res) {
   // console.log(reg);
   // reg.name = req.body.name;
   // reg.job = req.body.job;
-  return res.status(406).send("Usuário não encontrado");
+  return res.status(400).send("Usuário não encontrado");
 };
